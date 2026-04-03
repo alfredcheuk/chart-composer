@@ -125,7 +125,7 @@ with col_right:
     slug = to_slug(fund)
 
 with col_left:
-    paste_result = pib("Paste chart from clipboard (Cmd+V then click)", key="paste_btn")
+    paste_result = pib("Paste chart from clipboard", key="paste_btn")
 
     show_upload = st.toggle("Upload a file instead", value=False)
     uploaded = None
