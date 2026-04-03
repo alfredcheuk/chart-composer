@@ -1,0 +1,9 @@
+output/
+images/
+*.key
+*.pen
+*.pdf
+*.zip
+*.skill
+__pycache__/
+.streamlit/secrets.toml
