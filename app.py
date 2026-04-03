@@ -126,7 +126,11 @@ with col_right:
 
 with col_left:
     paste_result = pib("Paste chart from clipboard (Cmd+V then click)", key="paste_btn")
-    uploaded = st.file_uploader("Or upload chart image", type=["png", "jpg", "jpeg", "webp"])
+
+    show_upload = st.toggle("Upload a file instead", value=False)
+    uploaded = None
+    if show_upload:
+        uploaded = st.file_uploader("Upload chart image", type=["png", "jpg", "jpeg", "webp"])
 
 # Resolve chart image from paste or upload
 chart_img = None
