@@ -111,7 +111,7 @@ def image_to_bytes(img):
 # --- Streamlit UI ---
 st.set_page_config(page_title="Chart Composer", layout="wide")
 st.title("Chart Composer")
-st.caption("Paste a chart from clipboard or upload a file, pick the fund, download branded PNGs.")
+st.caption("To start, open the fund Keynote file and right-click the chart to copy. Then paste it here, pick the fund, and download branded PNGs.")
 
 titles = load_titles()
 fund_names = list(titles.keys())
